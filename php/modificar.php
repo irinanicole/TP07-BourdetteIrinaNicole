@@ -1,6 +1,8 @@
 <?php
     $ruta = '../';
     require_once 'encabezado.php';
+    require_once 'header_inicio.php';
+    require_once 'header_fin.php';
 
     include 'conexion.php';
     $conexion = conectar();
@@ -25,9 +27,11 @@
 ?>
 
 <main class="container py-3">
-    <section class="d-flex justify-content-center">
+    <section class="d-flex flex-column align-items-center">
         <h2>Modificar: </h2>
-        <a href="articulo_listado.php" class="btn btn-secondary rounded p-2">Cancelar</a>
+        <a href="articulo_listado.php" class="btn btn-secondary mb-2">Cancelar</a>
+    </section>
+    <section class="d-flex justify-content-center">
         <form class="p-4 border rounded w-50" action="modificar_ok.php" method="POST" enctype="multipart/form-data">
             <fieldset>
                 <legend class="text-center mb-4">Alta de Artículo</legend>

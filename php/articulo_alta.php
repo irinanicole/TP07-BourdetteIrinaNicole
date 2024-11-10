@@ -1,6 +1,8 @@
 <?php
     $ruta = '../';
     require("encabezado.php");
+    require_once 'header_inicio.php';
+    require_once 'header_fin.php';
 ?>
 
 <main class="container py-3">

@@ -1,9 +1,10 @@
 <?php
     $ruta = '../';
     require_once 'encabezado.php';
+    require_once 'header_inicio.php';
 ?>
 <!-- Header del ejercicio 01 del tp05 -->
-<header class="d-flex flex-row justify-content-end align-items-center">
+<section class="d-flex flex-row justify-content-end align-items-center">
 <?php
     include_once 'conexion.php';
     $conexion = conectar();
@@ -28,8 +29,10 @@
         }
         desconectar($conexion);
     }
+
+    echo '</section>';
+    require_once 'header_fin.php';
 ?>
-</header>
 
 <main class="container">
     <section>

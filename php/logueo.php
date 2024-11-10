@@ -1,6 +1,8 @@
 <?php
     $ruta = '../';
     include_once 'encabezado.php';
+    require_once 'header_inicio.php';
+    require_once 'header_fin.php';
 
 if (!empty($_POST['username']) && !empty($_POST['password']))
 {
@@ -26,8 +28,8 @@ if (!empty($_POST['username']) && !empty($_POST['password']))
         $coincide = false;
         while (mysqli_stmt_fetch($sentencia))
         {
-            echo '<p>Usuario: '.$usuTabla.'</p>';
-            echo '<p>Contraseña: '.$claveTabla.'</p>';
+            // echo '<p>Usuario: '.$usuTabla.'</p>';
+            // echo '<p>Contraseña: '.$claveTabla.'</p>';
             if (!empty($usuTabla))
             {
                 if ($contraFormu == $usuTabla)

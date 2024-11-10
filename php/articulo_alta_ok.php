@@ -1,6 +1,8 @@
 <?php
     $ruta = '../';
     include_once 'encabezado.php';
+    require_once 'header_inicio.php';
+    require_once 'header_fin.php';
 
     if (!empty($_POST['nombre']) && !empty($_POST['categoria']) && !empty($_POST['precio']))
     {

@@ -1,6 +1,8 @@
 <?php
     $ruta = '../';
     require_once ("encabezado.php");
+    require_once 'header_inicio.php';
+    require_once 'header_fin.php';
 ?>
 <main class="container-fluid text-center">
     <section class="d-flex flex-column justify-content-center">
